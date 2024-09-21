@@ -16,11 +16,12 @@
     <div class="container">
       <header>
         <img src="logo.png" alt="Shecodes logo" class="image" />
-        <form>
+        <form id="form">
           <input
             type="search"
             placeholder="Enter a city..."
             class="search-form"
+            id="search-form"
             required
           />
           <input type="submit" value="Search" id="" class="submit-form" />
@@ -28,7 +29,7 @@
       </header>
       <main>
         <div class="city-details">
-          <h1 class="city">San francisco</h1>
+          <h1 class="city" id="city">San francisco</h1>
           <p>
             Tuesday <strong>14:20</strong>, scattered clouds
             <br />
@@ -56,5 +57,6 @@
         <a href="https://app.netlify.com/" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
