@@ -10,6 +10,7 @@ header {
 main {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 .image {
   width: 150px;
@@ -49,30 +50,32 @@ main {
 }
 .city {
   color: #272142;
+  font-size: 38px;
+  margin: 0;
+  font-weight: 900;
 }
 .city-details {
   text-align: left;
   color: #27214266;
   font-size: 15px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 24pxpx;
   margin: 20px 0 10px;
 }
 .temperature {
-  position: relative;
-  top: 35px;
+  text-align: center;
 }
 .temperature-icon {
   font-size: 30px;
 }
 .temperature-value {
-  font-size: 40px;
+  font-size: 88px;
   font-weight: 900;
 }
 .temperature-degree {
-  font-size: 15px;
+  font-size: 45px;
   position: relative;
-  bottom: 18px;
+  bottom: 38px;
 }
 main div p strong {
   color: #f65282;
