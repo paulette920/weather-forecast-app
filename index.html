@@ -4,39 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forecast app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <img src="logo.png" alt="Shecodes logo" />
-      <form action="">
-        <input type="text" value="Enter a city..." />
-        <input type="search" value="Search" id="" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>San francisco</h1>
-        <p>
-          Tuesday 14:20, scattered clouds
-          <br />
-          Humidity: 91%, Wind: 4.47km/hr
-        </p>
-      </div>
-      <div>⛅ 20 °C</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/paulette920" target="_blank"
-        >Dushime Paulette</a
-      >
-      Code Hosted
-      <a
-        href="https://github.com/paulette920/weather-forecast-app"
-        target="_blank"
-        >on Github</a
-      >
-      and website Hosted on
-      <a href="https://app.netlify.com/" target="_blank">Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <img src="logo.png" alt="Shecodes logo" class="image" />
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            class="search-form"
+            required
+          />
+          <input type="submit" placeholder="Search" id="" class="submit-form" />
+        </form>
+      </header>
+      <main>
+        <div class="city-details">
+          <h1>San francisco</h1>
+          <p>
+            Tuesday <strong>14:20</strong>, scattered clouds
+            <br />
+            Humidity: 91%, Wind: <strong>4.47km/hr</strong>
+          </p>
+        </div>
+        <div class="temperature">
+          <span class="temperature-icon">⛅</span>
+          <span class="temperature-value">20</span>
+          <span class="temperature-degree">°C</span>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/paulette920" target="_blank"
+          >Dushime Paulette,</a
+        >
+        Code is hosted
+        <a
+          href="https://github.com/paulette920/weather-forecast-app"
+          target="_blank"
+          >on Github</a
+        >
+        and website Hosted on
+        <a href="https://app.netlify.com/" target="_blank">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
