@@ -1,4 +1,4 @@
-function SearchCity(event) {
+function HandleSubmit(event) {
   //preventing the normal behaviour of a form
   event.preventDefault();
   //selecting the input form and accesing the input of the user and storing it in a variable of city
@@ -10,4 +10,4 @@ function SearchCity(event) {
 
 //selecting the whole form
 let SearchForm = document.querySelector("#form");
-SearchForm.addEventListener("submit", SearchCity);
+SearchForm.addEventListener("submit", HandleSubmit);
